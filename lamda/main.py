@@ -32,15 +32,6 @@ print(max_value)
 
 print(max(nums))
 
-
-
-
-
-
-
-
-
-
 words = ["hello", " ", "world"]
 
 conc = reduce(lambda x,y : x+y, list(filter(lambda word: word!=" ", words)))
