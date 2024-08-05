@@ -1,11 +1,11 @@
 from design_pattrens.abstractFactory.Factory.AbstractAndroidFactory import AbstractAndroidFactory
+from design_pattrens.abstractFactory.Factory.AndroidButtonFactory import AndroidButtonFactory
+from design_pattrens.abstractFactory.Factory.OSFactory import OSFactory
 
 
 def Deploy(val):
-    if val == "ANDROID":
-        Abs = AbstractAndroidFactory()
-    if val == "IOS":
-        Abs = AbstractIosFactory()
+
+    Abs = OSFactory("Android")
     Button = Abs.create_button().create()
     Button.click()
     Checkbox = Abs.create_checkbox().create()
