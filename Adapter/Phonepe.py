@@ -1,4 +1,4 @@
-class PhonePe:
+class Payment:
     def __init__(self, Adapter):
         self.BankAdapter = Adapter
 
