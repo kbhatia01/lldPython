@@ -1,5 +1,5 @@
-from Adapter.Adapters.BankAdapterAbc import BankAdapterAbc
-from Adapter.Banks.YesBank import YesBank
+from design_pattrens.Adapter.Adapters.BankAdapterAbc import BankAdapterAbc
+from design_pattrens.Adapter.Banks.YesBank import YesBank
 
 
 class YesBankAdapter(BankAdapterAbc):
